@@ -1,0 +1,12 @@
+Source: ros-indigo-roomblock-bringup
+Section: misc
+Priority: extra
+Maintainer: Ryosuke Tajima <ryosuke.tajima@opensource-robotics.tokyo.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin, ros-indigo-roslaunch, ros-indigo-rostest
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-roomblock-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-serial, ros-indigo-controller-manager, ros-indigo-create-node, ros-indigo-image-transport, ros-indigo-joy, ros-indigo-robot-pose-ekf, ros-indigo-robot-state-publisher, ros-indigo-roomblock-description, ros-indigo-rplidar-ros, ros-indigo-rviz, ros-indigo-teleop-twist-joy
+Description: The roomblock_bringup package
