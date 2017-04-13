@@ -1,0 +1,21 @@
+<launch>
+  <arg name="use_bag" default="false"/>
+  <arg name="launch_rviz" default="true"/>
+
+  <!-- Specify the bag file -->
+  <arg name="bag_file" default="$(find roomblock_mapping)/bags/2017-03-15-10-49-47.bag"/>
+
+  <!-- Play the bag file and use simulated clock -->
+  <include if="$(arg use_bag)" file="$(find roomblock_mapping)/launch/include/play_bag_file.launch.xml">
+    <arg name="bag_file" value="$(arg bag_file)"/>
+  </include>
+
+  <!-- Start Google Cartographer -->
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="-configuration_directory $(find roomblock_mapping)/config -configuration_basename roomblock.lua" output="screen">
+  </node>
+
+  <!-- Rviz -->
+  <include if="$(arg launch_rviz)" file="$(find roomblock_mapping)/launch/rviz.launch"/>
+
+</launch>
