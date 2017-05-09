@@ -1,0 +1,14 @@
+ros-kinetic-roomblock (0.0.2-0jessie) jessie; urgency=high
+
+  * add metapackage
+  * Contributors: Tokyo Opensource Robotics Developer 534
+
+ -- Ryosuke Tajima <ryosuke.tajima@opensource-robotics.tokyo.jp>  Mon, 08 May 2017 15:00:00 -0000
+
+ros-kinetic-roomblock (0.0.1-0jessie) jessie; urgency=high
+
+
+
+ -- Ryosuke Tajima <ryosuke.tajima@opensource-robotics.tokyo.jp>  Wed, 12 Apr 2017 15:00:00 -0000
+
+
