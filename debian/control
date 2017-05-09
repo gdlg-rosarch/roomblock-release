@@ -1,0 +1,12 @@
+Source: ros-kinetic-roomblock-bringup
+Section: misc
+Priority: extra
+Maintainer: Ryosuke Tajima <ryosuke.tajima@opensource-robotics.tokyo.jp>
+Build-Depends: debhelper (>= 9.0.0), ros-kinetic-catkin, ros-kinetic-roslaunch, ros-kinetic-rostest
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-kinetic-roomblock-bringup
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, python-serial, ros-kinetic-controller-manager, ros-kinetic-create-node, ros-kinetic-image-transport, ros-kinetic-joy, ros-kinetic-robot-pose-ekf, ros-kinetic-robot-state-publisher, ros-kinetic-roomblock-description, ros-kinetic-rplidar-ros, ros-kinetic-rviz, ros-kinetic-teleop-twist-joy
+Description: The roomblock_bringup package
